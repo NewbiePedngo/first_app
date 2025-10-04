@@ -1,6 +1,8 @@
+import 'package:first_app/ApiExampleList.dart';
+import 'package:first_app/AssignmentWeek5.dart';
 import 'package:first_app/MyprofileCard.dart';
 import 'package:first_app/assignment1.dart';
-import 'package:first_app/assignment2.dart';
+import 'package:first_app/AQI.dart';
 import 'package:first_app/bottom_navigator.dart';
 import 'package:first_app/counter_fulwidget.dart';
 import 'package:first_app/counter_widget.dart';
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
     //    '/second': (context) => const FirstPage(),
       //  '/third': (context) => const SecondPage(),
 //},
-            home: AQIApp(),
+            home: Assignmentweek5(),
 
       //      home: GreetingWidget(childWidget: Text('Good afternoon')),
     );
