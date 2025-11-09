@@ -13,9 +13,16 @@ import 'package:first_app/greeting_widget.dart';
 import 'package:first_app/second_page.dart';
 import 'package:first_app/week3.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:first_app/TrafficLight.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+WidgetsFlutterBinding.ensureInitialized();
+await Firebase.initializeApp(
+options: DefaultFirebaseOptions.currentPlatform,
+);
+runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -35,8 +42,8 @@ class MyApp extends StatelessWidget {
 //'/': (context) => const BottomNavigatorExample(),
     //    '/second': (context) => const FirstPage(),
       //  '/third': (context) => const SecondPage(),
-//},
-            home: Assignmentweek5(),
+//},S
+            home:TrafficLightApp(),
 
       //      home: GreetingWidget(childWidget: Text('Good afternoon')),
     );
