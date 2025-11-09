@@ -1,6 +1,7 @@
 import 'package:first_app/ApiExampleList.dart';
 import 'package:first_app/AssignmentWeek5.dart';
 import 'package:first_app/MyprofileCard.dart';
+import 'package:first_app/answer1.dart';
 import 'package:first_app/assignment1.dart';
 import 'package:first_app/AQI.dart';
 import 'package:first_app/bottom_navigator.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
     //    '/second': (context) => const FirstPage(),
       //  '/third': (context) => const SecondPage(),
 //},S
-            home:TrafficLightApp(),
+            home:Answer1CommentCard(),
 
       //      home: GreetingWidget(childWidget: Text('Good afternoon')),
     );
